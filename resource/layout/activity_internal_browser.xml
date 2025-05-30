@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <!-- Barra superior com URL e controles -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurface"
+        app:elevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Barra de URL Refinada -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp" 
+                android:paddingEnd="16dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_tab_count"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardBackgroundColor="?attr/colorPrimaryContainer" 
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:id="@+id/tv_tab_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                        android:textColor="?attr/colorOnPrimaryContainer" /> 
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="8dp" 
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="?attr/colorSurfaceVariant"
+                    app:cardCornerRadius="22dp"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp"> 
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"> 
+
+                        <TextView
+                            android:id="@+id/tv_url"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                            android:textColor="?attr/colorOnSurfaceVariant" /> 
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Botão Fechar movido para fora do card da URL -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_close"
+                    style="@style/Widget.Material3.Button.IconButton"
+                    android:layout_width="48dp" 
+                    android:layout_height="48dp"
+                    android:layout_marginStart="4dp" 
+                    app:icon="@android:drawable/ic_menu_close_clear_cancel"
+                    app:iconTint="?attr/colorOnSurfaceVariant"
+                    android:contentDescription="Fechar" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_tabs"
+                    style="@style/Widget.Material3.Button.IconButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:icon="@android:drawable/ic_dialog_dialer" 
+                    app:iconTint="?attr/colorPrimary"
+                    android:contentDescription="Guias" />
+            </LinearLayout>
+
+            <!-- Barra de navegação com margem superior -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp" 
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp" 
+                android:layout_marginBottom="12dp" 
+                app:cardBackgroundColor="?attr/colorSurfaceContainerHigh" 
+                app:cardCornerRadius="28dp"
+                app:cardElevation="2dp"> 
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_back"
+                        style="@style/Widget.Material3.Button.IconButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" 
+                        android:layout_weight="1"
+                        app:icon="@android:drawable/ic_media_previous"
+                        app:iconTint="?attr/colorOnSurfaceVariant"
+                        android:contentDescription="Voltar" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_forward"
+                        style="@style/Widget.Material3.Button.IconButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" 
+                        android:layout_weight="1"
+                        app:icon="@android:drawable/ic_media_next"
+                        app:iconTint="?attr/colorOnSurfaceVariant"
+                        android:contentDescription="Avançar" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_home"
+                        style="@style/Widget.Material3.Button.IconButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" 
+                        android:layout_weight="1"
+                        app:icon="@android:drawable/ic_menu_revert"
+                        app:iconTint="?attr/colorOnSurfaceVariant"
+                        android:contentDescription="Início" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_refresh"
+                        style="@style/Widget.Material3.Button.IconButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" 
+                        android:layout_weight="1"
+                        app:icon="@android:drawable/ic_menu_rotate"
+                        app:iconTint="?attr/colorOnSurfaceVariant"
+                        android:contentDescription="Atualizar" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_new_tab"
+                        style="@style/Widget.Material3.Button.IconButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" 
+                        android:layout_weight="1"
+                        app:icon="@android:drawable/ic_menu_add"
+                        app:iconTint="?attr/colorPrimary"
+                        android:contentDescription="Nova guia" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Container para WebViews -->
+    <FrameLayout
+        android:id="@+id/tabs_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
