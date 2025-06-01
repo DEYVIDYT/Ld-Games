@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema de sobreposição para paleta Padrão (Teal) -->
+    <style name="ThemeOverlay.SteamRip.Default" parent="">
+        <item name="colorPrimary">#006874</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#97F0FF</item>
+        <item name="colorOnPrimaryContainer">#001F24</item>
+        <item name="colorSecondary">#4A6267</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSecondaryContainer">#CDE7EC</item>
+        <item name="colorOnSecondaryContainer">#051F23</item>
+        <item name="colorTertiary">#525E7D</item>
+        <item name="colorOnTertiary">#FFFFFF</item>
+        <item name="colorTertiaryContainer">#DAE2FF</item>
+        <item name="colorOnTertiaryContainer">#0E1B37</item>
+    </style>
+    
+    <!-- Tema de sobreposição para paleta Azul -->
+    <style name="ThemeOverlay.SteamRip.Blue" parent="">
+        <item name="colorPrimary">#0052CC</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#D4E5FF</item>
+        <item name="colorOnPrimaryContainer">#001A41</item>
+        <item name="colorSecondary">#3B5F8D</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSecondaryContainer">#D6E3FF</item>
+        <item name="colorOnSecondaryContainer">#001D36</item>
+        <item name="colorTertiary">#5D5B7D</item>
+        <item name="colorOnTertiary">#FFFFFF</item>
+        <item name="colorTertiaryContainer">#E2DFFF</item>
+        <item name="colorOnTertiaryContainer">#191836</item>
+    </style>
+    
+    <!-- Tema de sobreposição para paleta Verde -->
+    <style name="ThemeOverlay.SteamRip.Green" parent="">
+        <item name="colorPrimary">#006E1C</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#9CF68E</item>
+        <item name="colorOnPrimaryContainer">#002204</item>
+        <item name="colorSecondary">#386A35</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSecondaryContainer">#BBF2B0</item>
+        <item name="colorOnSecondaryContainer">#002106</item>
+        <item name="colorTertiary">#386660</item>
+        <item name="colorOnTertiary">#FFFFFF</item>
+        <item name="colorTertiaryContainer">#BBECE4</item>
+        <item name="colorOnTertiaryContainer">#00201C</item>
+    </style>
+    
+    <!-- Tema de sobreposição para paleta Roxo -->
+    <style name="ThemeOverlay.SteamRip.Purple" parent="">
+        <item name="colorPrimary">#6750A4</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#E9DDFF</item>
+        <item name="colorOnPrimaryContainer">#22005D</item>
+        <item name="colorSecondary">#7D5260</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSecondaryContainer">#FFD9E3</item>
+        <item name="colorOnSecondaryContainer">#31101D</item>
+        <item name="colorTertiary">#805AA8</item>
+        <item name="colorOnTertiary">#FFFFFF</item>
+        <item name="colorTertiaryContainer">#EADDFF</item>
+        <item name="colorOnTertiaryContainer">#25005A</item>
+    </style>
+    
+    <!-- Tema de sobreposição para paleta Vermelho -->
+    <style name="ThemeOverlay.SteamRip.Red" parent="">
+        <item name="colorPrimary">#B3261E</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#F9DEDC</item>
+        <item name="colorOnPrimaryContainer">#410E0B</item>
+        <item name="colorSecondary">#984061</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSecondaryContainer">#FFD9E3</item>
+        <item name="colorOnSecondaryContainer">#3E001D</item>
+        <item name="colorTertiary">#A73226</item>
+        <item name="colorOnTertiary">#FFFFFF</item>
+        <item name="colorTertiaryContainer">#FFDBCF</item>
+        <item name="colorOnTertiaryContainer">#410500</item>
+    </style>
+    
+    <!-- Tema de sobreposição para paleta Laranja -->
+    <style name="ThemeOverlay.SteamRip.Orange" parent="">
+        <item name="colorPrimary">#E65100</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#FFD9C2</item>
+        <item name="colorOnPrimaryContainer">#331200</item>
+        <item name="colorSecondary">#B55400</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSecondaryContainer">#FFDBBC</item>
+        <item name="colorOnSecondaryContainer">#381A00</item>
+        <item name="colorTertiary">#A05A00</item>
+        <item name="colorOnTertiary">#FFFFFF</item>
+        <item name="colorTertiaryContainer">#FFDEAE</item>
+        <item name="colorOnTertiaryContainer">#321B00</item>
+    </style>
+    
+    <!-- Tema de sobreposição para paleta Rosa -->
+    <style name="ThemeOverlay.SteamRip.Pink" parent="">
+        <item name="colorPrimary">#D81B60</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#FCE4EC</item>
+        <item name="colorOnPrimaryContainer">#4A0721</item>
+        <item name="colorSecondary">#C2185B</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSecondaryContainer">#FFD8E7</item>
+        <item name="colorOnSecondaryContainer">#3F001D</item>
+        <item name="colorTertiary">#AD1457</item>
+        <item name="colorOnTertiary">#FFFFFF</item>
+        <item name="colorTertiaryContainer">#FFD6E6</item>
+        <item name="colorOnTertiaryContainer">#3B001C</item>
+    </style>
+    
+    <!-- Tema de sobreposição para paleta Amarelo -->
+    <style name="ThemeOverlay.SteamRip.Yellow" parent="">
+        <item name="colorPrimary">#FFC107</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorPrimaryContainer">#FFF9C4</item>
+        <item name="colorOnPrimaryContainer">#3E3000</item>
+        <item name="colorSecondary">#FFA000</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="colorSecondaryContainer">#FFECB3</item>
+        <item name="colorOnSecondaryContainer">#3E2900</item>
+        <item name="colorTertiary">#FF8F00</item>
+        <item name="colorOnTertiary">#000000</item>
+        <item name="colorTertiaryContainer">#FFE082</item>
+        <item name="colorOnTertiaryContainer">#3E2200</item>
+    </style>
+    
+    <!-- Tema de sobreposição para paleta Ciano -->
+    <style name="ThemeOverlay.SteamRip.Cyan" parent="">
+        <item name="colorPrimary">#00BCD4</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#E0F7FA</item>
+        <item name="colorOnPrimaryContainer">#003641</item>
+        <item name="colorSecondary">#0097A7</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSecondaryContainer">#B2EBF2</item>
+        <item name="colorOnSecondaryContainer">#002D33</item>
+        <item name="colorTertiary">#00838F</item>
+        <item name="colorOnTertiary">#FFFFFF</item>
+        <item name="colorTertiaryContainer">#B2EBF2</item>
+        <item name="colorOnTertiaryContainer">#00272A</item>
+    </style>
+    
+    <!-- Tema de sobreposição para paleta Lime -->
+    <style name="ThemeOverlay.SteamRip.Lime" parent="">
+        <item name="colorPrimary">#CDDC39</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorPrimaryContainer">#F9FBE7</item>
+        <item name="colorOnPrimaryContainer">#3E4200</item>
+        <item name="colorSecondary">#AFB42B</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="colorSecondaryContainer">#F0F4C3</item>
+        <item name="colorOnSecondaryContainer">#353800</item>
+        <item name="colorTertiary">#9E9D24</item>
+        <item name="colorOnTertiary">#000000</item>
+        <item name="colorTertiaryContainer">#F0F4C3</item>
+        <item name="colorOnTertiaryContainer">#303000</item>
+    </style>
+    
+    <!-- Tema de sobreposição para paleta Indigo -->
+    <style name="ThemeOverlay.SteamRip.Indigo" parent="">
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#E8EAF6</item>
+        <item name="colorOnPrimaryContainer">#121A3D</item>
+        <item name="colorSecondary">#303F9F</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSecondaryContainer">#C5CAE9</item>
+        <item name="colorOnSecondaryContainer">#0A1236</item>
+        <item name="colorTertiary">#283593</item>
+        <item name="colorOnTertiary">#FFFFFF</item>
+        <item name="colorTertiaryContainer">#C5CAE9</item>
+        <item name="colorOnTertiaryContainer">#070E30</item>
+    </style>
+</resources>
