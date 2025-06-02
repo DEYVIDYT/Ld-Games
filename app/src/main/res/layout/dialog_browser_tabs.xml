@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface">
+
+    <!-- Cabeçalho -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="?attr/colorSurfaceContainerHigh">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_menu"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:icon="@android:drawable/ic_menu_sort_by_size"
+            app:iconTint="?attr/colorOnSurface"
+            android:contentDescription="Menu" />
+
+        <TextView
+            android:id="@+id/tv_tabs_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Guias"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+            android:textColor="?attr/colorOnSurface" />
+    </LinearLayout>
+
+    <!-- Lista de guias -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp" />
+
+    <!-- Botão de nova guia -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nova guia"
+            app:icon="@android:drawable/ic_menu_add"
+            style="@style/Widget.Material3.Button.TonalButton" />
+    </LinearLayout>
+
+    <!-- Barra de navegação inferior -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="0dp"
+        app:cardBackgroundColor="?attr/colorSurfaceContainerHigh">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_tab_home"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:icon="@android:drawable/ic_menu_revert"
+                app:iconTint="?attr/colorOnSurfaceVariant"
+                android:contentDescription="Início" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_tab_back"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:icon="@android:drawable/ic_media_previous"
+                app:iconTint="?attr/colorOnSurfaceVariant"
+                android:contentDescription="Voltar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_tab_home_main"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:icon="@android:drawable/ic_menu_compass"
+                app:iconTint="?attr/colorOnSurfaceVariant"
+                android:contentDescription="Página inicial" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_tab_forward"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:icon="@android:drawable/ic_media_next"
+                app:iconTint="?attr/colorOnSurfaceVariant"
+                android:contentDescription="Avançar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_tab_add"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:icon="@android:drawable/ic_menu_add"
+                app:iconTint="?attr/colorOnSurfaceVariant"
+                android:contentDescription="Nova guia" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

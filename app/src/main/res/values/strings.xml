@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LDGAMES</string>
+    <string name="action_settings">Configurações</string>
+    <string name="loading">Carregando...</string>
+    <string name="error_loading">Erro ao carregar dados</string>
+    <string name="retry">Tentar novamente</string>
+    <string name="download">Download</string>
+    <string name="copy_link">Copiar Link</string>
+    <string name="link_copied">Link copiado para a área de transferência</string>
+    <string name="no_download_links">Nenhum link de download disponível</string>
+    <string name="close">Fechar</string>
+    <string name="screenshots">Screenshots</string>
+    <string name="description">Descrição</string>
+    <string name="download_links">Links de Download</string>
+</resources>

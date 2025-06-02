@@ -1,0 +1,65 @@
+plugins {
+    id("com.android.application")
+    // Add Kotlin plugin if needed, based on code analysis (seems to be Java only for now)
+    // id("org.jetbrains.kotlin.android")
+}
+
+android {
+    namespace = "com.LDGAMES"
+    compileSdk = 34 // Use a recent SDK version
+
+    defaultConfig {
+        applicationId = "com.LDGAMES"
+        minSdk = 24 // Target Android 7.0 Nougat or higher
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    // If using Kotlin:
+    // kotlinOptions {
+    //     jvmTarget = "1.8"
+    // }
+    buildFeatures {
+        viewBinding = true // Enable view binding if used, or adjust based on project needs
+    }
+}
+
+dependencies {
+
+    implementation("androidx.core:core-ktx:1.13.1") // Core Kotlin extensions
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.12.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.fragment:fragment-ktx:1.7.1") // Fragment KTX
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.cardview:cardview:1.0.0")
+    implementation("androidx.documentfile:documentfile:1.0.1")
+    implementation("com.squareup.picasso:picasso:2.8") // Picasso for image loading
+    implementation("com.pierfrancescosoffritti.androidyoutubeplayer:core:12.1.0") // YouTube Player
+    implementation("com.google.code.gson:gson:2.10.1") // Gson for JSON serialization (for headers in DB)
+
+    // Lifecycle components (optional but recommended)
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.0")
+
+    // Testing dependencies (optional)
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+}
